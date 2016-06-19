@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <!--
+        <parameters>
+            <parameter key="tl_assets.twig_extension.class">TlAssetsBundle\Extension\Twig\TlAssetsExtension</parameter>
+            <parameter key="tl_assets.twig_manager.class">TlAssetsBundle\Extension\Twig\TlAssetsManager</parameter>
+            <parameter key="tl_assets.compiler.class">TlAssetsBundle\Compiler\CompilerManager</parameter>
+        </parameters>
+
+        <services>
+            <service id="tl_assets.twig_manager" class="%tl_assets.twig_manager.class%">
+                <argument>%tl_assets.config%</argument>
+                <argument>%tl_assets.debug%</argument>
+                <argument>%tl_assets.use_cache%</argument>
+                <argument>%tl_assets.live_compilation%</argument>
+
+                <call method="setDefaultFilters">
+                    <argument>%tl_assets.default_filters%</argument>
+                </call>
+
+                <call method="setVariables">
+                    <argument>%tl_assets.variables%</argument>
+                </call>
+
+                <call method="setCompilerManager">
+                    <argument type="service" id="tl_assets.compiler"></argument>
+                </call>
+
+            </service>
+
+            <service id="tl_assets.twig_extension" class="%tl_assets.twig_extension.class%">
+                <argument type="service" id="tl_assets.twig_manager"></argument>
+                <tag name="twig.extension" />
+            </service>
+
+
+            <service id="tl_assets.compiler" class="%tl_assets.compiler.class%">
+                <argument>%kernel.root_dir%</argument>
+                <argument>%tl_assets.config%</argument>
+                <argument>%tl_assets.debug%</argument>
+
+                <call method="setLogger">
+                    <argument type="service" id="logger"></argument>
+                </call>
+            </service>
+
+        </services>-->
+
+</container>

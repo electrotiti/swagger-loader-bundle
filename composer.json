@@ -1,0 +1,29 @@
+{
+    "name": "electrotiti/swagger-loader-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony bundle to load route from a Swagger file",
+    "keywords": ["symfony", "swagger", "OpenApi", "rest", "api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thierry LESZKOWICZ",
+            "email": "electrotiti@gmail.com",
+            "homepage": "http://github.com/electrotiti/swagger-loader-bundle"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Electrotiti\\SwaggerLoaderBundle\\": "src/SwaggerLoaderBundle/" }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.7.*|3.*",
+        "phpunit/phpunit": "5.4.*",
+        "electrotiti/swagger-tools": "dev-master"
+    },
+    "repositories": [
+        {
+            "url": "https://github.com/electrotiti/swagger-tools",
+            "type": "git"
+        }
+    ]
+}
