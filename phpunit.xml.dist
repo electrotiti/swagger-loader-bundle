@@ -1,0 +1,17 @@
+<phpunit bootstrap="./src/SwaggerLoaderBundle/Tests/bootstrap.php" colors="true">
+
+    <testsuites>
+        <testsuite name="Swagger loader bundle test suite">
+            <directory suffix="Test.php">./src/SwaggerLoaderBundle/Tests/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src</directory>
+            <exclude>
+                <directory>./vendor</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>
